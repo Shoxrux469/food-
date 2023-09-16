@@ -7,6 +7,8 @@ const tabcontnets = document.querySelectorAll(".tabcontent");
 const tabheaders = document.querySelectorAll(".tabheader__item");
 const tabheader_active = document.querySelectorAll(".tabheader__item_active");
 const input = document.querySelectorAll(".order__input");
+const btn = document.querySelector(".btn_white");
+const modal = document.querySelector(".modal");
 
 let slideIndex = 0;
 totalView.innerHTML = slides.length >= 10 ? slides.length : `0${slides.length}`;
@@ -66,4 +68,7 @@ input.forEach((inp) => {
     };
   }
 });
-    
+// 3
+btn.onclick = () => {
+  modal.classList.add("show", 'fade');
+};
